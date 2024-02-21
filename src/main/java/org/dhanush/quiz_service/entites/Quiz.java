@@ -17,6 +17,6 @@ public class Quiz {
     private int id;
     private String title;
 
-    @ManyToMany //Many to many mapping
-    private List<Question> questions;
+    @ElementCollection //Many to many mapping
+    private List<Integer> questionIds;
 }
